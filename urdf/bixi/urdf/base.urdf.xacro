@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!-- Revolute-Revolute Manipulator -->
 <robot name="bixi" xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:include filename="$(find urdf_sim_tutorial)/urdf/bixi/urdf/wheel.urdf.xacro" />
+    <xacro:include filename="$(find ROS-Simulation)/urdf/bixi/urdf/wheel.urdf.xacro" />
     <!-- Constants for robot dimensions -->
     <xacro:property name="M_PI" value="3.1415926535897931"/>
 
@@ -26,7 +26,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://urdf_sim_tutorial/urdf/bixi/meshes/chasis.dae" scale="1 1 1" />
+                <mesh filename="package://ROS-Simulation/urdf/bixi/meshes/chasis.dae" scale="1 1 1" />
             </geometry>
         </visual>
         <collision>

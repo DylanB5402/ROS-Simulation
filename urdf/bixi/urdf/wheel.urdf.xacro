@@ -21,10 +21,10 @@
                 <origin xyz="0 0 0" rpy="0 0 0" />
                 <geometry>
                     <xacro:unless value="${ccw == 0}">
-                        <mesh filename="package://urdf_sim_tutorial/urdf/bixi/meshes/mec_f_l.dae" scale="1 1 1"/>
+                        <mesh filename="package://ROS-Simulation/urdf/bixi/meshes/mec_f_l.dae" scale="1 1 1"/>
                     </xacro:unless>
                     <xacro:if value="${ccw == 0}">
-                        <mesh filename="package://urdf_sim_tutorial/urdf/bixi/meshes/mec_f_r.dae" scale="1 1 1"/>
+                        <mesh filename="package://ROS-Simulation/urdf/bixi/meshes/mec_f_r.dae" scale="1 1 1"/>
                     </xacro:if>
                 </geometry>
             </visual>
