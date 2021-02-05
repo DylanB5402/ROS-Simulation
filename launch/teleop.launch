@@ -3,5 +3,5 @@
         <param name="dev" type="string" value="/dev/input/js0" />
     </node>
 
-    <include file="$(find ROS-Simulation)/launch/display.launch"/>
+    <!-- <include file="$(find ROS-Simulation)/launch/display.launch"/> -->
 </launch>
