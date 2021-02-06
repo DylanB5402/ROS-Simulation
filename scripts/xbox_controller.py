@@ -2,16 +2,17 @@
 
 import rospy
 import sensor_msgs.msg._Joy
-def callback(data):
+
+def foo(data):
     rospy.loginfo(data.data)
 
 def print_xbox_controller_data():
     rospy.init_node("xbox_wrapper", anonymous=True)
-    sub = rospy.Subscriber("/joy", callback)
-    
+    sub = rospy.Subscriber("/joy", callback=foo)
+    rospy.spin()
 
 if __name__ == '__main__':
     try:
-        pass
+        print_xbox_controller_data()
     except rospy.ROSInterruptException:
         pass

@@ -30,13 +30,13 @@
         <box size = "${base_side_length} ${base_side_length} 0.2"/>
       </geometry>
       <material name = "white"/>
-      <origin xyz = "0 0 0" rpy = "0 0 ${pi/4}"/>
+      <origin xyz = "0 0 0" rpy = "0 0 ${-pi/4}"/>
     </visual> 
     <collision>
       <geometry>
         <box size = "${base_side_length} ${base_side_length} 0.2"/>
       </geometry>
-      <origin xyz = "0 0 0" rpy = "0 0 ${pi/4}"/>
+      <origin xyz = "0 0 0" rpy = "0 0 ${-pi/4}"/>
     </collision>
     <xacro:default_inertial mass="8"/>
   </link>
