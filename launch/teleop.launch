@@ -1,7 +1,13 @@
 <launch>
+    <include file="$(find ROS-Simulation)/launch/holonomic.launch">
+    </include>
+
     <node respawn="true" pkg="joy" type="joy_node" name="xbox_controller" >
         <param name="dev" type="string" value="/dev/input/js0" />
     </node>
+    <node pkg="ROS-Simulation" name="xbox_controller_wrapper" type="xbox_controller.py"></node>
+    <node pkg="ROS-Simulation" name="teleop_drive" type="teleop_tank_drive.py"></node>
+
 
     <!-- <include file="$(find ROS-Simulation)/launch/display.launch"/> -->
 </launch>
